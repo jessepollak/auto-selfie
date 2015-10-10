@@ -11,7 +11,7 @@ if [[ ${latitude:0:1} == "-" ]] ; then
 	longituderef="W"
 fi
 longitude=$(/Users/jhunt3/bin/CoreLocationCLI -once yes -format '%longitude')
-exiftool -q -exif:gpslatitude="$latitude" -exif:gpslatituderef=$latituderef \
+/usr/local/bin/exiftool -q -exif:gpslatitude="$latitude" -exif:gpslatituderef=$latituderef \
             -exif:gpslongitude="$longitude" -exif:gpslongituderef=$longituderef \
             /tmp/snapshot.jpg
 mv /tmp/snapshot.jpg "$filename"
