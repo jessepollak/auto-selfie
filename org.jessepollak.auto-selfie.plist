@@ -4,9 +4,9 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>org.ranman.auto-selfie</string>
+    <string>org.jessepollak.auto-selfie</string>
     <key>Program</key>
-    <string>/Users/ranman/bin/snap.sh</string>
+    <string>/Users/jessepollak/bin/snap.sh</string>
     <key>StartInterval</key>
     <integer>3600</integer>
     <key>RunAtLoad</key>

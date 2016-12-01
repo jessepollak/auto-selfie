@@ -1,12 +1,13 @@
-#!/usr/local/bin/zsh
-filename="/Users/jhunt3/Dropbox/Apps/whereapp/auto-selfie/$(date +%s).jpg"
+#!/bin/sh
+
+filename="/Users/jessepollak/.auto-selfie/$(date +%s).jpg"
 /usr/local/bin/imagesnap -q -w 1.0 /tmp/snapshot.jpg
-latitude=$(/Users/jhunt3/bin/CoreLocationCLI -once yes -format '%latitude')
+latitude=$(corelocationcli -once yes -format '%latitude')
 latituderef="N"
 if [[ ${latitude:0:1} == "-" ]] ; then
 	latituderef="S"
 fi
-longitude=$(/Users/jhunt3/bin/CoreLocationCLI -once yes -format '%longitude')
+longitude=$(corelocationcli -once yes -format '%longitude')
 longituderef="W"
 if [[ ${longitude:0:1} == "-" ]] ; then
 	longituderef="W"
