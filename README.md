@@ -4,6 +4,6 @@
 
 ```
 $ brew cask install corelocationcli
-$ brew install imagesnap
+$ brew install imagesnap exiftool
 $ sudo launchctl load org.jessepollak.auto-selfie.plist
 ```
