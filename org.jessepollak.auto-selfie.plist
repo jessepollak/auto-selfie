@@ -6,7 +6,7 @@
     <key>Label</key>
     <string>org.jessepollak.auto-selfie</string>
     <key>Program</key>
-    <string>/Users/jessepollak/bin/snap.sh</string>
+    <string>/Users/jessepollak/repos/auto-selfie/snap.sh</string>
     <key>StartInterval</key>
     <integer>3600</integer>
     <key>RunAtLoad</key>
